@@ -10,4 +10,4 @@ langchain
 langchain-google-genai
 langchain-community
 python-docx
-pymupdf4llm
+pymupdf
