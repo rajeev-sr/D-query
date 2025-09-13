@@ -3,3 +3,5 @@ credentials.json
 token.pickle
 __pycache__
 .env
+raw_emails/
+processed/

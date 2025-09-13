@@ -6,3 +6,8 @@ uvicorn
 streamlit
 pandas
 python-dotenv
+langchain
+langchain-google-genai
+langchain-community
+python-docx
+pymupdf4llm
