@@ -1,4 +1,3 @@
-# src/gmail_client.py
 import logging
 import os
 import pickle
