@@ -39,7 +39,7 @@ class GmailClient:
             logging.error(f"Gmail authentication failed: {e}")
             raise Exception("Please check credentials.json file and internet connection")
         
-    def fetch_emails(self, query="is:unread", max_results=50):
+    def fetch_emails(self, query="is:unread", max_results=10):
         # Fetch emails based on query
         try:
             results = self.service.users().messages().list(
