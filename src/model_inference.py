@@ -56,17 +56,17 @@ class QueryClassifier:
                 
                 # Check for NaN or inf values
                 if torch.isnan(logits).any():
-                    print("⚠️ Model produces NaN values")
+                    print("Model produces NaN values")
                     return False
                 if torch.isinf(logits).any():
-                    print("⚠️ Model produces inf values")  
+                    print("Model produces inf values")  
                     return False
                     
-                print("✅ Model validation passed")
+                print("Model validation passed")
                 return True
                 
         except Exception as e:
-            print(f"⚠️ Model validation failed: {e}")
+            print(f"Model validation failed: {e}")
             return False
     
     def load_model(self):
@@ -104,7 +104,7 @@ class QueryClassifier:
             self.model = base_model
             self.model.eval()
             if not self._validate_model_outputs():
-                print("⚠️ Model validation failed, loading base model instead...")
+                print("Model validation failed, loading base model instead...")
                 return self._load_base_model_fallback()
                     
             print("Model loaded successfully")
@@ -117,7 +117,7 @@ class QueryClassifier:
     def _load_base_model_fallback(self):
         """Load base model when fine-tuned model is corrupted"""
         try:
-            print("🔄 Loading base model as fallback...")
+            print("Loading base model as fallback...")
             
             # Try different base models
             base_models = ["microsoft/DialoGPT-medium", "gpt2", "distilgpt2"]
@@ -143,19 +143,19 @@ class QueryClassifier:
                     
                     # Test the model
                     if self._validate_model_outputs():
-                        print(f"✅ Successfully loaded {model_name}")
+                        print(f"Successfully loaded {model_name}")
                         return True
                     else:
-                        print(f"❌ {model_name} validation failed")
+                        print(f"{model_name} validation failed")
                         
                 except Exception as e:
-                    print(f"❌ Failed to load {model_name}: {e}")
+                    print(f"Failed to load {model_name}: {e}")
                     continue
             
             return False
             
         except Exception as e:
-            print(f"❌ Base model fallback failed: {e}")
+            print(f"Base model fallback failed: {e}")
             return False
     def classify_and_respond(self, query, max_length=512):
         """Classify query and generate response"""
@@ -208,7 +208,7 @@ class QueryClassifier:
             
             # Check if response is garbage
             if self._is_garbage_response(generated_part):
-                print("⚠️ Detected garbage response, using fallback")
+                print("Detected garbage response, using fallback")
                 generated_part = self._get_rule_based_response(query)
             
             # Parse result

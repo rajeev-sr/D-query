@@ -79,7 +79,7 @@ class ModelTrainer:
         if not self.tokenizer:
             print("Initializing tokenizer...")
             if not self.setup_model_and_tokenizer():
-                print("❌ Failed to initialize tokenizer")
+                print("Failed to initialize tokenizer")
                 return None
         
         try:
@@ -124,7 +124,7 @@ class ModelTrainer:
             print(f"Loaded {len(data)} training examples")
             
             if len(data) == 0:
-                print("❌ No valid training data found")
+                print("No valid training data found")
                 return None
             
             # Prepare texts for training with validation
@@ -148,14 +148,14 @@ class ModelTrainer:
                     continue
             
             if len(texts) == 0:
-                print("❌ No valid texts created from data")
+                print("No valid texts created from data")
                 return None
             
             # Create dataset
             from datasets import Dataset
             dataset = Dataset.from_dict({"text": texts})
             
-            print(f"✅ Dataset created with {len(dataset)} samples")
+            print(f"Dataset created with {len(dataset)} samples")
             
             # Tokenize function - FIXED VERSION
             def tokenize_function(examples):
@@ -232,13 +232,13 @@ class ModelTrainer:
                         
                         # Check for NaN loss
                         if torch.isnan(loss).any() or torch.isinf(loss).any():
-                            print(f"⚠️ NaN/Inf loss detected: {loss}")
+                            print(f"NaN/Inf loss detected: {loss}")
                             # Use a safe fallback loss
                             loss = torch.tensor(1.0, device=loss.device)
                         
                         return (loss, outputs) if return_outputs else loss
                     except Exception as e:
-                        print(f"⚠️ Training step failed: {e}")
+                        print(f"Training step failed: {e}")
                         # Return a safe fallback loss
                         safe_loss = torch.tensor(1.0, device=inputs['input_ids'].device)
                         return safe_loss

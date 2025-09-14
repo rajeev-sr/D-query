@@ -9,7 +9,7 @@ def test_classification():
     classifier = QueryClassifier()
     
     if not classifier.model:
-        print("❌ Model not loaded properly")
+        print("Model not loaded properly")
         return False
     
     # Print device info
@@ -31,7 +31,7 @@ def test_classification():
     results = []
     successful_tests = 0
     
-    print("\n🧪 Testing with sample queries...")
+    print("\nTesting with sample queries...")
     for i, query in enumerate(test_queries, 1):
         print(f"\n--- Test {i} ---")
         print(f"Query: {query}")
@@ -44,14 +44,14 @@ def test_classification():
             result = classifier.classify_and_respond(query)
             
             if "error" in result:
-                print(f"❌ Error: {result['error']}")
+                print(f"Error: {result['error']}")
                 # Continue with other tests instead of breaking
                 continue
             
-            print(f"✅ Category: {result['category']}")
-            print(f"✅ Action: {result['action']}")
-            print(f"✅ Confidence: {result['confidence']:.2f}")
-            print(f"✅ Response: {result['response'][:100]}...")
+            print(f"Category: {result['category']}")
+            print(f"Action: {result['action']}")
+            print(f"Confidence: {result['confidence']:.2f}")
+            print(f"Response: {result['response'][:100]}...")
             
             results.append({
                 "query": query,
@@ -60,7 +60,7 @@ def test_classification():
             successful_tests += 1
             
         except Exception as e:
-            print(f"❌ Test {i} failed with exception: {e}")
+            print(f"Test {i} failed with exception: {e}")
             continue
         
         # Memory info after each test
@@ -72,11 +72,11 @@ def test_classification():
     os.makedirs('models', exist_ok=True)
     with open('models/test_results.json', 'w') as f:
         json.dump(results, f, indent=2)
-    
-    print(f"\n📊 Testing completed!")
-    print(f"✅ Successful tests: {successful_tests}/{len(test_queries)}")
-    print(f"📁 Results saved to models/test_results.json")
-    
+
+    print(f"\nTesting completed!")
+    print(f"Successful tests: {successful_tests}/{len(test_queries)}")
+    print(f"Results saved to models/test_results.json")
+
     return successful_tests > 0
 
 if __name__ == "__main__":
