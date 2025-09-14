@@ -7,9 +7,9 @@ def main():
     print("=== STARTING MODEL TRAINING ===")
     
     # Check prerequisites
-    if not os.path.exists("data/processed/fine_tuning_data.json"):
+    if not os.path.exists("data/processed/training_data.jsonl"):
         print("Training data not found. Running data preparation...")
-        validator = DataValidator("data/processed/training_dataset.csv")
+        validator = DataValidator("data/processed/training_data.csv")
         validator.prepare_training_format()
     
     # Initialize trainer
@@ -28,7 +28,7 @@ def main():
     
     # Prepare dataset
     print("Loading dataset...")
-    dataset = trainer.prepare_dataset("data/processed/fine_tuning_data.json")
+    dataset = trainer.prepare_dataset("data/processed/training_data.jsonl")
     if not dataset:
         print("Failed to load dataset")
         return False
