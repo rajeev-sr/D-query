@@ -1,0 +1,47 @@
+[
+  {
+    "query": "When is the next exam scheduled?",
+    "result": {
+      "category": "academic",
+      "response": "Please check the academic calendar for exam schedules. Exams are typically held in December and May.",
+      "confidence": 0.6,
+      "fallback": true
+    }
+  },
+  {
+    "query": "I forgot my password to the student portal",
+    "result": {
+      "category": "technical",
+      "response": "Click 'Forgot Password' on the login page to reset your password. Contact IT support if you need further help.",
+      "confidence": 0.6,
+      "fallback": true
+    }
+  },
+  {
+    "query": "Can you help me with my assignment submission?",
+    "result": {
+      "category": "other",
+      "response": "Thank you for your question. Please contact the support team for assistance.",
+      "confidence": 0.4,
+      "fallback": true
+    }
+  },
+  {
+    "query": "How do I register for next semester courses?",
+    "result": {
+      "category": "other",
+      "response": "Thank you for your question. Please contact the support team for assistance.",
+      "confidence": 0.4,
+      "fallback": true
+    }
+  },
+  {
+    "query": "What are the fees for the upcoming semester?",
+    "result": {
+      "category": "administrative",
+      "response": "You can pay fees through the student portal. Please contact the accounts office for payment assistance.",
+      "confidence": 0.6,
+      "fallback": true
+    }
+  }
+]

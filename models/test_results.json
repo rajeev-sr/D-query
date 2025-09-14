@@ -1,0 +1,65 @@
+[
+  {
+    "query": "a student interested in the Student Mentorship Program for the 2025-26 academic year. I would like to know if there are any specific guidelines or eligibility criteria mentioned in the brochure that I should be aware of before applying.",
+    "result": {
+      "category": "other",
+      "response": "Thank you for your question. For specific assistance, please contact the student support office.",
+      "action": "review_needed",
+      "confidence": 0.5
+    }
+  },
+  {
+    "query": "Hello",
+    "result": {
+      "category": "other",
+      "response": "I'm not sure if you're serious or not.",
+      "action": "review_needed",
+      "confidence": 0.5
+    }
+  },
+  {
+    "query": "When is the exam?",
+    "result": {
+      "category": "other",
+      "response": "I'm not sure.",
+      "action": "review_needed",
+      "confidence": 0.3
+    }
+  },
+  {
+    "query": "I forgot my password to the student portal",
+    "result": {
+      "category": "other",
+      "response": "I'm not sure what you're asking.",
+      "action": "review_needed",
+      "confidence": 0.5
+    }
+  },
+  {
+    "query": "Can you help me with my assignment submission?",
+    "result": {
+      "category": "other",
+      "response": "Yes, I can.",
+      "action": "review_needed",
+      "confidence": 0.3
+    }
+  },
+  {
+    "query": "How do I register for next semester courses?",
+    "result": {
+      "category": "other",
+      "response": "You can't.",
+      "action": "review_needed",
+      "confidence": 0.3
+    }
+  },
+  {
+    "query": "What are the fees for the upcoming semester?",
+    "result": {
+      "category": "other",
+      "response": "I'm not sure.",
+      "action": "review_needed",
+      "confidence": 0.3
+    }
+  }
+]
