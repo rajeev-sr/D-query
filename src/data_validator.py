@@ -3,6 +3,7 @@ from collections import Counter
 
 class DataValidator:
     def __init__(self, csv_path: str):
+        self.csv_path = csv_path
         self.df = pd.read_csv(csv_path)
     
     def validate_dataset(self):
@@ -66,7 +67,9 @@ class DataValidator:
         
         # Save training format
         training_df = pd.DataFrame(training_data)
-        training_df.to_json('data/processed/fine_tuning_data.json', orient='records', lines=True)
+        output_path = self.csv_path.replace('.csv', '.jsonl')
+        training_df.to_json(output_path, orient='records', lines=True)
         
         print(f"Prepared {len(training_data)} samples for fine-tuning")
-        return 'data/processed/fine_tuning_data.json'
+        print(f"Saved to: {output_path}")
+        return output_path
