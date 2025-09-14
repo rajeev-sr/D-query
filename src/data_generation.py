@@ -134,7 +134,8 @@ class TrainingDataGenerator:
         
         return text_splitter.split_documents(documents)
 
-    def generate_synthetic_queries(self, document_chunk: Document, num_queries: int = 3) -> List[Dict]:
+    def generate_synthetic_queries(self, document_chunk: Document, num_queries: int = 1) -> List[Dict]:
+        print("Generating synthetic queries")
         """Generate synthetic student queries based on document content"""
         
         prompt_template = ChatPromptTemplate.from_template("""
@@ -196,6 +197,7 @@ class TrainingDataGenerator:
             return []
 
     def generate_response(self, query: str, document_content: str) -> str:
+        print("Generating response for query")
         """Generate appropriate response for a query using document content"""
         
         prompt_template = ChatPromptTemplate.from_template("""
@@ -214,8 +216,8 @@ class TrainingDataGenerator:
         3. Use information from the department documents
         4. If the information is not available in the documents, politely mention that you'll forward their query to the concerned authority
         5. Keep the response concise but complete
-        6. Do **not** mention the student ID.  
-        7. Do **not** start with “Thank you for your email” or similar filler phrases. 
+        6. Do **not** start with “Thank you for your email” or similar filler phrases.
+        7. Do **not** mention the student ID.
         8. Use a professional email format
         9. Use Department Name  : Administration Office, IIT Bhilai                                                    
 
