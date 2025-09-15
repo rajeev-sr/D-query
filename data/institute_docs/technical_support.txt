@@ -1,0 +1,28 @@
+
+            TECHNICAL SUPPORT GUIDE
+
+            STUDENT PORTAL ACCESS:
+            - URL: https://portal.university.edu
+            - Username: Your student ID
+            - Password: Default is DOB (DDMMYYYY), change on first login
+
+            COMMON ISSUES:
+            1. Forgot Password:
+            - Click "Forgot Password" on login page
+            - Enter student ID and registered email
+            - Check email for reset link
+
+            2. Cannot Access Courses:
+            - Ensure you are registered for the semester
+            - Contact academic office if registration issues persist
+
+            3. WiFi Connection:
+            - Network: UniversityWiFi
+            - Password: Available at IT helpdesk
+            - Contact IT for connection issues
+
+            SUPPORT CONTACTS:
+            - IT Helpdesk: it-help@university.edu
+            - Phone: (555) 123-4567
+            - Hours: Monday-Friday 9 AM - 6 PM
+            

@@ -1,0 +1,125 @@
+[
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52"
+    },
+    "decision": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 0.70)",
+      "confidence": 0.7,
+      "category": "academic",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October",
+      "rag_sources": [
+        "fee_structure.txt",
+        "academic_calendar.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": true
+    },
+    "added_at": "2025-09-15T00:48:07.639196",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "integration_test_email",
+      "subject": "Fee Payment Question",
+      "body": "How can I pay my semester fees online?",
+      "sender": "student@university.edu"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.70, RAG: 0.47)",
+      "confidence": 0.7,
+      "category": "other",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom technical_support.txt: TECHNICAL SUPPORT GUIDE STUDENT PORTAL ACCESS: - URL: https://portal.university.edu - Username: Your student ID",
+      "rag_sources": [
+        "fee_structure.txt",
+        "technical_support.txt",
+        "academic_calendar.txt"
+      ],
+      "enhanced": true
+    },
+    "added_at": "2025-09-15T00:48:09.262883",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52"
+    },
+    "decision": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 0.70)",
+      "confidence": 0.7,
+      "category": "academic",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October",
+      "rag_sources": [
+        "fee_structure.txt",
+        "academic_calendar.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": true
+    },
+    "added_at": "2025-09-15T00:54:02.227225",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52"
+    },
+    "decision": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 0.70)",
+      "confidence": 0.7,
+      "category": "academic",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October",
+      "rag_sources": [
+        "assignment_guidelines.txt",
+        "academic_calendar.txt",
+        "fee_structure.txt"
+      ],
+      "enhanced": true
+    },
+    "added_at": "2025-09-15T00:57:56.662412",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52"
+    },
+    "decision": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 0.70)",
+      "confidence": 0.7,
+      "category": "academic",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October",
+      "rag_sources": [
+        "fee_structure.txt",
+        "academic_calendar.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": true
+    },
+    "added_at": "2025-09-15T00:58:19.193764",
+    "status": "pending_review"
+  }
+]
