@@ -1,0 +1,586 @@
+2025-09-15 01:31:05,729 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:31:05,825 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:31:05,825 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:31:21,976 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:33:37,083 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:33:37,210 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:33:37,210 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:33:41,812 - watchfiles.main - INFO - 9 changes detected
+2025-09-15 01:33:41,928 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:33:42,563 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:33:42,599 - watchfiles.main - INFO - 27 changes detected
+2025-09-15 01:33:42,682 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:33:42,682 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:33:50,304 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:33:55,860 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:33:55,933 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:33:55,933 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:34:26,705 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:26,706 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:34:26,707 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 01:34:26,708 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:34:26,710 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:34:26,710 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:34:26,712 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:26,713 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:27,147 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:27,808 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:27,813 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:28,216 - api.dependencies - ERROR - Failed to initialize Gmail client: No module named 'google_auth_oauthlib'
+2025-09-15 01:34:32,744 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:42:36,547 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:42:36,713 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:36,713 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:36,713 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:42:36,879 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:36,879 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:37,018 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:37,018 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:42,027 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:42,028 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:42,028 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:42:42,030 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 01:42:42,030 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:42:42,031 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:42:42,031 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:42:46,888 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:46,888 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:47,025 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:47,025 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:48,001 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:48,002 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:48,093 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:48,093 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:49,036 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:49,036 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:49,036 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:42:49,037 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 01:42:49,037 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:42:49,037 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:42:49,037 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:49,038 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:49,038 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:49,038 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:49,279 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:49,279 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:54,690 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:54,690 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:54,691 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:54,692 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:55,877 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:55,877 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:55,878 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:55,878 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:56,987 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:56,987 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:56,988 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:56,989 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,103 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,103 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,171 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,171 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,173 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,173 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,787 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,787 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,798 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,799 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:42:58,800 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:42:58,800 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:05,142 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:05,142 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:08,980 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:08,980 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:09,154 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:09,154 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:10,157 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:10,157 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:10,162 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:10,162 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:19,051 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:19,052 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:19,052 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:43:19,053 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 01:43:19,053 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:43:19,054 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:43:20,167 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:20,167 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:20,316 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:20,316 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:21,300 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:21,300 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:21,467 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:21,467 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,596 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,596 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,597 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,598 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,598 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,599 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,599 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:43:34,600 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 01:43:34,600 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:43:34,600 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:43:34,602 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,602 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,603 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,603 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,613 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,613 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:34,615 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:34,615 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:35,739 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:35,739 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:35,740 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:35,740 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:35,740 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:43:35,740 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:43:41,325 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:46:21,012 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:46:21,065 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:46:21,218 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:21,218 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:21,218 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:46:21,390 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:21,390 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:21,505 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:21,506 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:22,508 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:22,509 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:22,672 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:22,672 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:24,104 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:24,111 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:24,111 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:46:29,820 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 01:46:29,820 - api.dependencies - ERROR - Failed to initialize decision engine: EnhancedDecisionEngine.__init__() got an unexpected keyword argument 'confidence_thresholds'
+2025-09-15 01:46:29,820 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:46:29,821 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:46:29,821 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:46:30,822 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:30,823 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:30,823 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:46:30,823 - api.dependencies - ERROR - Failed to initialize decision engine: EnhancedDecisionEngine.__init__() got an unexpected keyword argument 'confidence_thresholds'
+2025-09-15 01:46:30,823 - api.routers.health - WARNING - Decision engine: FAILED - 
+2025-09-15 01:46:30,823 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:46:30,824 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:30,824 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:30,824 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:30,824 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:31,046 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:31,046 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:31,842 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:31,842 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:31,844 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:31,844 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:32,063 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:32,063 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:38,547 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:38,548 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:38,549 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:38,549 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:39,732 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:39,732 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:39,733 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:39,733 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:42,070 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:42,070 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:43,077 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:43,077 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:48,154 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:48,154 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:48,156 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:48,157 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:46:48,158 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:46:48,158 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:47:25,692 - watchfiles.main - INFO - 1 change detected
+2025-09-15 01:47:25,797 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:47:28,002 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:47:28,085 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:47:28,330 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:47:28,330 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:47:28,330 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:49:13,150 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:53:12,207 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:53:12,292 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:12,293 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:12,293 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:53:22,941 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:22,941 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:22,941 - api.routers.health - WARNING - Gmail connection: FAILED - 
+2025-09-15 01:53:30,824 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 01:53:31,632 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 01:53:31,684 - watchfiles.main - INFO - 5 changes detected
+2025-09-15 01:53:32,036 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:53:32,672 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 01:53:37,650 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:53:37,786 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 01:53:37,786 - api.routers.health - WARNING - Decision engine: FAILED - EnhancedDecisionEngine.process_query() takes 2 positional arguments but 3 were given
+2025-09-15 01:53:37,786 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:53:37,787 - api.routers.health - INFO - Email processor: OK
+2025-09-15 01:53:37,788 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:37,788 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:37,789 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:37,789 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:37,791 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:37,791 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:38,001 - watchfiles.main - INFO - 8 changes detected
+2025-09-15 01:53:38,807 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:38,807 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:38,808 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:38,808 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:38,810 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:38,810 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:48,815 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:48,815 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:48,965 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:48,965 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:49,954 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:49,954 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:53:50,154 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:53:50,154 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:55:18,652 - watchfiles.main - INFO - 1 change detected
+2025-09-15 01:55:18,806 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:55:21,243 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:55:21,358 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:55:21,635 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:55:21,635 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:55:21,635 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:56:19,507 - watchfiles.main - INFO - 1 change detected
+2025-09-15 01:56:19,621 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:56:20,357 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:56:20,480 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:56:20,480 - api.dependencies - ERROR - Failed to initialize Gmail client: Please check credentials.json file and internet connection
+2025-09-15 01:56:20,480 - main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 01:56:35,920 - watchfiles.main - INFO - 1 change detected
+2025-09-15 01:56:36,120 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:56:36,806 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:56:36,826 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:56:36,904 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:56:36,906 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 01:56:36,906 - main - INFO - ✅ Gmail client initialized
+2025-09-15 01:56:37,177 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:56:40,956 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 01:56:41,589 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 01:56:41,739 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:56:42,183 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 01:56:48,191 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 01:56:48,192 - main - INFO - ✅ Decision engine initialized
+2025-09-15 01:56:48,193 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:56:48,193 - main - INFO - ✅ Email processor initialized
+2025-09-15 01:56:48,255 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 01:56:56,828 - watchfiles.main - INFO - 1 change detected
+2025-09-15 01:56:57,016 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 01:56:58,450 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 01:56:58,486 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:56:58,555 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 01:56:58,556 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 01:56:58,556 - main - INFO - ✅ Gmail client initialized
+2025-09-15 01:57:01,612 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 01:57:02,369 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 01:57:02,553 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 01:57:02,930 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 01:57:07,893 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 01:57:07,893 - main - INFO - ✅ Decision engine initialized
+2025-09-15 01:57:07,894 - api.dependencies - INFO - Email processor initialized
+2025-09-15 01:57:07,894 - main - INFO - ✅ Email processor initialized
+2025-09-15 01:57:08,167 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 01:59:42,548 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:08:21,950 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:08:22,537 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-09-15 02:08:22,539 - api.dependencies - INFO - Gmail client initialized
+2025-09-15 02:08:22,539 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 02:08:22,540 - api.dependencies - ERROR - Failed to initialize decision engine: No module named 'torch'
+2025-09-15 02:08:22,540 - api.main - ERROR - ❌ Failed to initialize components: 
+2025-09-15 02:08:31,340 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:09:47,728 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:09:47,821 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 02:09:47,822 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 02:09:47,822 - main - INFO - ✅ Gmail client initialized
+2025-09-15 02:09:47,911 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:09:53,614 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:09:54,360 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:09:54,528 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:09:54,884 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:09:59,810 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:09:59,810 - main - INFO - ✅ Decision engine initialized
+2025-09-15 02:09:59,812 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:09:59,812 - main - INFO - ✅ Email processor initialized
+2025-09-15 02:10:00,142 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 02:10:09,137 - api.routers.dashboard - WARNING - Could not fetch pending emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:09,384 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:10,392 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:19,231 - api.routers.dashboard - WARNING - Could not fetch pending emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:20,408 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:21,417 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:29,128 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:10:29,128 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:10:29,128 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:10:29,139 - api.routers.emails - ERROR - Failed to fetch emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:29,371 - api.routers.dashboard - WARNING - Could not fetch pending emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:30,232 - api.routers.emails - ERROR - Failed to fetch emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:31,425 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:32,433 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:39,380 - api.routers.dashboard - WARNING - Could not fetch pending emails: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:42,441 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:43,450 - api.routers.dashboard - ERROR - Failed to get real-time data: 'MockGmailClient' object has no attribute 'fetch_emails'
+2025-09-15 02:10:48,867 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:12:05,050 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:12:05,141 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 02:12:05,142 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 02:12:05,142 - main - INFO - ✅ Gmail client initialized
+2025-09-15 02:12:05,196 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:12:08,508 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:12:09,242 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:12:09,461 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:12:09,837 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:12:14,658 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:12:14,659 - main - INFO - ✅ Decision engine initialized
+2025-09-15 02:12:14,659 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:12:14,660 - main - INFO - ✅ Email processor initialized
+2025-09-15 02:12:14,725 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 02:12:15,859 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:12:15,860 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:12:15,860 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:12:15,862 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:15,868 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:16,029 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:16,909 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:17,092 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:25,919 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:27,098 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:28,106 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:35,928 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:37,471 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:37,472 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:38,113 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:38,653 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:39,123 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:39,148 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:39,150 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:40,249 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:45,909 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:12:45,909 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:12:45,910 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:12:49,134 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:49,251 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:49,375 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:49,378 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:50,141 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:50,523 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:52,690 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:52,692 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,048 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,410 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,660 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,839 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,948 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:53,950 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:54,204 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:54,345 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:54,526 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:55,101 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:56,162 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:56,163 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:57,312 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:58,565 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:58,567 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:59,676 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:12:59,719 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:00,150 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:01,159 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:09,684 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:11,168 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:12,176 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:15,916 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:13:15,916 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:13:15,916 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:13:19,692 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:22,183 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:23,191 - api.routers.dashboard - ERROR - Failed to get real-time data: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:29,701 - api.routers.dashboard - WARNING - Could not fetch pending emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:29,728 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:30,866 - api.routers.emails - ERROR - Failed to fetch emails: MockGmailClient.fetch_emails() got an unexpected keyword argument 'query'
+2025-09-15 02:13:32,807 - watchfiles.main - INFO - 1 change detected
+2025-09-15 02:13:33,004 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:13:35,064 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:13:35,218 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 02:13:35,229 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 02:13:35,229 - main - INFO - ✅ Gmail client initialized
+2025-09-15 02:13:35,314 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:13:40,707 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:13:41,359 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:13:41,480 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:13:41,899 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:13:46,537 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:13:46,537 - main - INFO - ✅ Decision engine initialized
+2025-09-15 02:13:46,537 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:13:46,537 - main - INFO - ✅ Email processor initialized
+2025-09-15 02:13:46,547 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:13:46,547 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:13:46,547 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:13:46,595 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 02:13:50,055 - watchfiles.main - INFO - 1 change detected
+2025-09-15 02:13:50,252 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:13:51,971 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:13:52,055 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 02:13:52,057 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 02:13:52,057 - main - INFO - ✅ Gmail client initialized
+2025-09-15 02:13:52,131 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:13:55,000 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:13:55,733 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:13:55,895 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:13:56,315 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:14:01,872 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:14:01,873 - main - INFO - ✅ Decision engine initialized
+2025-09-15 02:14:01,873 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:14:01,873 - main - INFO - ✅ Email processor initialized
+2025-09-15 02:14:02,076 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:14:09,633 - main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:14:09,719 - root - ERROR - Gmail authentication failed: [Errno 2] No such file or directory: 'credentials.json'
+2025-09-15 02:14:09,719 - api.dependencies - INFO - Fallback to Mock Gmail client (Demo Mode)
+2025-09-15 02:14:09,719 - main - INFO - ✅ Gmail client initialized
+2025-09-15 02:14:12,631 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:14:13,340 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:14:13,533 - watchfiles.main - INFO - 3 changes detected
+2025-09-15 02:14:13,883 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:14:18,507 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:14:18,507 - main - INFO - ✅ Decision engine initialized
+2025-09-15 02:14:18,508 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:14:18,508 - main - INFO - ✅ Email processor initialized
+2025-09-15 02:14:18,597 - watchfiles.main - INFO - 4 changes detected
+2025-09-15 02:14:20,314 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:14:20,314 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:14:20,314 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:14:36,157 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:14:36,157 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:14:36,157 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:14:44,536 - api.routers.health - INFO - Gmail connection: OK (Demo Mode)
+2025-09-15 02:14:44,537 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:14:44,537 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:15:01,350 - main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:24:25,423 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:24:25,423 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 02:24:25,423 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 02:24:25,423 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 02:24:37,296 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-09-15 02:24:37,299 - api.dependencies - INFO - Gmail client initialized
+2025-09-15 02:24:37,299 - api.routers.health - WARNING - Gmail connection: FAILED - 'GmailClient' object has no attribute 'is_authenticated'
+2025-09-15 02:24:37,299 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:24:40,301 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:24:40,893 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:24:45,522 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:24:45,717 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:24:45,717 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:24:45,717 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:25:05,585 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 02:26:09,208 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 02:26:09,208 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 02:26:09,208 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 02:26:09,208 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 02:26:17,740 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-09-15 02:26:17,741 - api.dependencies - INFO - Gmail client initialized
+2025-09-15 02:26:17,741 - api.routers.health - WARNING - Gmail connection: FAILED - 'GmailClient' object has no attribute 'is_authenticated'
+2025-09-15 02:26:17,741 - api.dependencies - INFO - Configuration loaded successfully
+2025-09-15 02:26:19,839 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-15 02:26:20,319 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-15 02:26:25,087 - api.dependencies - INFO - Decision engine initialized
+2025-09-15 02:26:25,282 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:26:25,283 - api.dependencies - INFO - Email processor initialized
+2025-09-15 02:26:25,283 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:27:27,344 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-09-15 02:27:27,349 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-09-15 02:27:27,351 - api.dependencies - INFO - ✅ Automated processor initialized
+2025-09-15 02:27:34,282 - api.routers.processing - INFO - Starting batch processing with max_emails: 10
+2025-09-15 02:27:34,282 - root - ERROR - Batch processing failed: 'coroutine' object has no attribute 'fetch_emails'
+2025-09-15 02:27:34,282 - api.routers.processing - ERROR - Batch processing failed: 
+2025-09-15 02:27:54,710 - api.routers.health - WARNING - Gmail connection: FAILED - 'GmailClient' object has no attribute 'is_authenticated'
+2025-09-15 02:27:54,865 - api.routers.health - INFO - Decision engine: OK
+2025-09-15 02:27:54,865 - api.routers.health - INFO - Email processor: OK
+2025-09-15 02:28:23,538 - api.routers.processing - WARNING - Working hours check failed: type object 'AutomatedEmailProcessor' has no attribute 'config', defaulting to True
+2025-09-15 02:28:23,538 - root - ERROR - Batch processing failed: 'coroutine' object has no attribute 'fetch_emails'
+2025-09-15 02:28:23,539 - api.routers.processing - INFO - Automated batch processing completed: {'status': 'error', 'error': "'coroutine' object has no attribute 'fetch_emails'", 'processed': 0}
+2025-09-15 14:33:17,518 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:33:17,520 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:33:17,520 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:33:17,520 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:35:06,653 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:35:07,226 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:35:07,227 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:35:07,227 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:35:07,227 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:36:49,762 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:36:50,285 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:36:50,285 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:36:50,285 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:36:50,285 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:38:39,251 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:38:39,822 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:38:39,822 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:38:39,822 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:38:39,822 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:39:47,843 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:39:48,382 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:39:48,382 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:39:48,382 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:39:48,382 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:44:57,578 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:44:58,160 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:44:58,160 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:44:58,160 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:44:58,160 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:46:40,180 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:46:40,985 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:46:40,985 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:46:40,985 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:46:40,985 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:46:55,836 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:46:56,353 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:46:56,353 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:46:56,353 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:46:56,353 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:47:10,697 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:47:11,349 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:47:11,349 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:47:11,349 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:47:11,349 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 14:47:26,003 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 14:47:26,662 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 14:47:26,662 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 14:47:26,662 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 14:47:26,662 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:10:02,866 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:10:03,442 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:10:03,442 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:10:03,442 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:10:03,442 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:16:59,126 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:16:59,728 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:16:59,728 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:16:59,728 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:16:59,728 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:18:31,115 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:18:32,217 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:18:32,217 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:18:32,217 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:18:32,217 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:20:14,737 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:20:15,840 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:20:15,840 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:20:15,841 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:20:15,841 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:21:37,597 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:21:38,698 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:21:38,698 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:21:38,698 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:21:38,698 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:22:54,433 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:22:55,476 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:22:55,476 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:22:55,476 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:22:55,476 - api.main - INFO - ✅ Email processor initialized
+2025-09-15 15:23:18,345 - api.main - INFO - 🛑 Shutting down D-Query Email Automation API
+2025-09-15 15:23:18,949 - api.main - INFO - 🚀 Starting D-Query Email Automation API
+2025-09-15 15:23:18,949 - api.main - INFO - ✅ Gmail client initialized
+2025-09-15 15:23:18,949 - api.main - INFO - ✅ Decision engine initialized
+2025-09-15 15:23:18,949 - api.main - INFO - ✅ Email processor initialized
