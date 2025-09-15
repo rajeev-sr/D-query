@@ -3,10 +3,10 @@ class ModelFallbacks:
     def get_available_models():
         """List of fallback models if primary fails"""
         return [
-            "microsoft/DialoGPT-medium",  # Primary choice
-            "microsoft/DialoGPT-small",   # Smaller, faster
+            "microsoft/DialoGPT-small",   # Start with smaller model for stability
+            "distilgpt2",                 # Smallest option  
             "gpt2",                       # Most compatible
-            "distilgpt2"                  # Smallest option
+            "microsoft/DialoGPT-medium",  # Larger model (last resort)
         ]
     
     @staticmethod

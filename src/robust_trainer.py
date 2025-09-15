@@ -105,19 +105,24 @@ class RobustTrainer(ModelTrainer):
         from transformers import TrainingArguments
         return TrainingArguments(
             output_dir=output_dir,
-            num_train_epochs=epochs,
-            per_device_train_batch_size=batch_size,
-            gradient_accumulation_steps=gradient_accumulation,
-            learning_rate=1e-5,  # Much lower learning rate to prevent NaN
-            warmup_steps=min(100, len(dataset) // 10),
-            logging_steps=max(1, len(dataset) // 20),
-            save_steps=max(50, len(dataset) // 4),
-            save_total_limit=2,
+            num_train_epochs=1,  # Single epoch only
+            per_device_train_batch_size=1,  # Minimum batch size  
+            gradient_accumulation_steps=8,  # Higher accumulation for stability
+            learning_rate=1e-6,  # Ultra-low learning rate
+            warmup_steps=5,  # Minimal warmup
+            logging_steps=1,  # Log every step
+            save_steps=10,  # Save very frequently
+            save_total_limit=5,
             prediction_loss_only=True,
             remove_unused_columns=False,
             dataloader_pin_memory=False,
             fp16=False,  # Disable fp16 to prevent NaN issues
-            max_grad_norm=1.0,  # Gradient clipping
+            bf16=False,  # Also disable bf16
+            max_grad_norm=0.01,  # Extremely strict gradient clipping
+            adam_epsilon=1e-8,  # More stable Adam epsilon
+            weight_decay=0.0,  # No weight decay for stability
+            lr_scheduler_type="constant",  # No learning rate scheduling
+            dataloader_num_workers=0,  # Single-threaded data loading
             report_to=None,  # Disable wandb/tensorboard
         )
     

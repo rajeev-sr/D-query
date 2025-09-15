@@ -45,7 +45,7 @@ class ModelTrainer:
             # Load model
             self.model = AutoModelForCausalLM.from_pretrained(
                 self.base_model_name,
-                torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+                dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
                 device_map="auto" if torch.cuda.is_available() else None
             )
             
@@ -164,7 +164,7 @@ class ModelTrainer:
                     examples["text"],
                     truncation=True,
                     padding="max_length",
-                    max_length=256,  # Reduced max length
+                    max_length=128,  # Very short sequences for stability
                     return_tensors=None  # Important: Don't return tensors yet
                 )
                 
