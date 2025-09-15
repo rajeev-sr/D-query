@@ -1,0 +1,86 @@
+[
+  {
+    "test_id": "rag_test_1",
+    "query": "Final Exam Date",
+    "result": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 1.00)",
+      "confidence": 1.0,
+      "category": "academic",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October 1-5, 2025 - End-term Exams: December 10-20, 2025 - Results Declaration: January 5, 2025 SEMESTER 2: - Classes Start: January 15, 2025 - Mid-term Exams: March 15-20, 2025 - End-term Exams: May 15-25, 2025 - Results Declaration: June 10, 2025 IMPORTANT DATES: - Registration Deadline: 1 week before semester start - Fee Payment Deadline: 2 weeks after registration - Assignment Submission: 1 week before end-term exams\n\nFrom assignment_guidelines.txt: ASSIGNMENT SUBMISSION GUIDELINES SUBMISSION PROCESS: 1. Login to student portal 2. Navigate to course",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "assignment_guidelines.txt",
+        "technical_support.txt"
+      ],
+      "enhanced": true
+    },
+    "validation_passed": true
+  },
+  {
+    "test_id": "rag_test_2",
+    "query": "Fee Payment Methods",
+    "result": {
+      "action": "auto_respond",
+      "reason": "High AI confidence with good category (confidence: 1.00)",
+      "confidence": 1.0,
+      "category": "fee",
+      "response": "<|startoftext|>You are an institute assistant with access to official documentation. \n            Use the following official information to answer the student query accurately.\n\n            Official Information:\n            From fee_structure.txt: FEE STRUCTURE 2025-26 UNDERGRADUATE PROGRAMS: - Tuition Fee: $5,000 per semester - Library Fee: $200 per semester - Laboratory Fee: $300 per semester - Sports Fee: $100 per semester - Total: $5,600 per semester PAYMENT METHODS: - Online Payment: Available 24/7 through student portal - Bank Transfer: Account details available in student handbook - Installments: Available in 2 installments per semester LATE PAYMENT PENALTY: - 1-7 days late: $50 penalty - 8-15 days late: $100 penalty - More than 15 days: Academic hold on account\n\nFrom academic_calendar.txt: ACADEMIC CALENDAR 2025-26 SEMESTER 1: - Classes Start: August 15, 2025 - Mid-term Exams: October",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": true
+    },
+    "validation_passed": true
+  },
+  {
+    "test_id": "rag_test_3",
+    "query": "Password Reset Help",
+    "result": {
+      "action": "escalate",
+      "reason": "Low confidence or insufficient context (AI: 0.55, RAG: 0.22)",
+      "confidence": 0.55,
+      "ai_category": "technical",
+      "ai_response": "You need to create a new school and login with your old one.",
+      "rag_sources": [
+        "technical_support.txt"
+      ],
+      "response": null
+    },
+    "validation_passed": true
+  },
+  {
+    "test_id": "rag_test_4",
+    "query": "Assignment Late Submission",
+    "result": {
+      "action": "escalate",
+      "reason": "Low confidence or insufficient context (AI: 0.75, RAG: 0.16)",
+      "confidence": 0.75,
+      "ai_category": "other",
+      "ai_response": "Assignments can be submitted through the course portal. Please check the deadline in your course syllabus.",
+      "rag_sources": [
+        "assignment_guidelines.txt"
+      ],
+      "response": null
+    },
+    "validation_passed": true
+  },
+  {
+    "test_id": "rag_test_5",
+    "query": "Urgent Issue",
+    "result": {
+      "action": "escalate",
+      "reason": "Contains sensitive keywords requiring human attention",
+      "confidence": 1.0,
+      "ai_category": "other",
+      "ai_response": "We need to fix this ASAP!",
+      "rag_sources": [
+        "technical_support.txt"
+      ],
+      "response": null
+    },
+    "validation_passed": true
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "processing_interval_minutes": 30,
+  "max_emails_per_batch": 10,
+  "auto_respond_enabled": true,
+  "confidence_thresholds": {
+    "auto_respond": 0.65,
+    "review_needed": 0.4,
+    "escalate": 0.0
+  },
+  "human_review_required_categories": [
+    "complex",
+    "complaint",
+    "technical"
+  ],
+  "escalation_keywords": [
+    "urgent",
+    "emergency",
+    "complaint",
+    "angry",
+    "frustrated",
+    "disappointed",
+    "wrong",
+    "mistake",
+    "problem",
+    "issue"
+  ],
+  "email_query": "is:unread",
+  "working_hours": {
+    "enabled": true,
+    "start": "09:00",
+    "end": "17:00",
+    "timezone": "UTC",
+    "weekdays_only": true
+  },
+  "notifications": {
+    "enabled": true,
+    "email": null,
+    "escalation_only": false,
+    "daily_summary": true,
+    "weekly_summary": true
+  },
+  "email_settings": {
+    "use_gmail_api": true,
+    "signature_enabled": true,
+    "mark_as_read": true,
+    "add_label": "AI_PROCESSED"
+  },
+  "safety_settings": {
+    "max_auto_responses_per_hour": 50,
+    "require_human_approval_for_new_senders": false,
+    "blacklist_domains": [],
+    "whitelist_domains": []
+  }
+}

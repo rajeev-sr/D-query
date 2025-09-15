@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-09-15 00:22:59.921600",
+  "success": true,
+  "system_stats": {
+    "model_loaded": true,
+    "rag_enabled": true,
+    "knowledge_base": {
+      "total_chunks": 4,
+      "collection_name": "institute_knowledge",
+      "embedding_model": "all-MiniLM-L6-v2"
+    },
+    "total_documents": 4
+  },
+  "success_criteria": {
+    "Model loaded": true,
+    "RAG enabled": true,
+    "Knowledge base populated": true,
+    "Enhanced classification working": true,
+    "Decision engine operational": true
+  },
+  "score": "5/5"
+}
