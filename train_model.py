@@ -7,10 +7,13 @@ def main():
     print("=== STARTING MODEL TRAINING ===")
     
     # Check prerequisites
-    if not os.path.exists("data/processed/training_data.jsonl"):
-        print("Training data not found. Running data preparation...")
-        validator = DataValidator("data/processed/training_data.csv")
-        validator.prepare_training_format()
+    if not os.path.exists("data/processed/training_data_cleaned.jsonl"):
+        print("Cleaned training data not found. Running data cleaning...")
+        os.system("python -m scripts.clean_training_data")
+    
+    if not os.path.exists("data/processed/training_data_cleaned.jsonl"):
+        print("Failed to create cleaned training data")
+        return False
     
     # Initialize trainer
     from src.model_fallbacks import ModelFallbacks
@@ -27,8 +30,8 @@ def main():
     trainer.setup_lora_config()
     
     # Prepare dataset
-    print("Loading dataset...")
-    dataset = trainer.prepare_dataset("data/processed/training_data.jsonl")
+    print("Loading cleaned dataset...")
+    dataset = trainer.prepare_dataset("data/processed/training_data_cleaned.jsonl")
     if not dataset:
         print("Failed to load dataset")
         return False
