@@ -1,6 +1,7 @@
 google-api-python-client
 google-auth-oauthlib
 google-auth-httplib2
+google-generativeai
 fastapi
 uvicorn
 streamlit
@@ -11,7 +12,12 @@ langchain-google-genai
 langchain-community
 python-docx
 pymupdf
+PyPDF2
 torch
 transformers
 datasets
 peft
+chromadb
+sentence_transformers
+plotly
+schedule
