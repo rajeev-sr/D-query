@@ -10,7 +10,7 @@
 
 ## 🌟 Overview
 
-D-Query AI Email Automation System transforms traditional slow departmental email handling (6-12 hours) into an intelligent, automated response system that processes student queries in under 5 minutes. The system combines fine-tuned language models, Retrieval-Augmented Generation (RAG), Google Gemini AI, and multi-agent architecture to deliver accurate, contextual responses with 87.3% classification accuracy and 64.7% automation rate.
+The D-Query AI Email Automation System is an intelligent email processing platform designed for educational institutions. It leverages advanced AI technologies including fine-tuned LoRA models, Retrieval-Augmented Generation (RAG), Google Gemini AI, and multi-agent architecture to automatically classify, process, and respond to student queries with contextual relevance. Unlike the traditional process where departments may take 6–12 hours to reply to student emails, D-Query enables instant, accurate, and well-structured responses while still ensuring human oversight for critical decisions.
 
 ## ✨ Key Features
 
