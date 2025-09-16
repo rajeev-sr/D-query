@@ -1,10 +1,13 @@
 from src.model_inference import QueryClassifier
 from src.rag_system import RAGSystem
+from src.gemini_filter import GeminiQueryFilter
 from typing import Dict, Any
 import re
 import torch
 import logging
 from typing import List
+import google.generativeai as genai
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -13,6 +16,17 @@ class EnhancedQueryClassifier(QueryClassifier):
         super().__init__(model_path)
         self.rag_system = RAGSystem(docs_dir)
         self.rag_enabled = False
+        
+        # Initialize Gemini for intelligent response generation
+        self.gemini_api_key = os.getenv('GEMINI_API_KEY')
+        if self.gemini_api_key:
+            genai.configure(api_key=self.gemini_api_key)
+            self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+            self.gemini_enabled = True
+            print("Gemini LLM enabled for intelligent response generation")
+        else:
+            self.gemini_enabled = False
+            print("Gemini LLM disabled - API key not found")
         
         # Setup RAG system
         self._setup_rag()
@@ -121,8 +135,8 @@ class EnhancedQueryClassifier(QueryClassifier):
             
             # Use RAG-enhanced response if it's better quality
             if len(generated_part) > 20 and not self._is_generic_response(generated_part):
-                # Format as professional email
-                professional_response = self._format_professional_email(generated_part, context_result)
+                # Format as professional email with original query
+                professional_response = self._format_professional_email(generated_part, context_result, query)
                 enhanced_result['response'] = professional_response
                 enhanced_result['enhanced'] = True
                 enhanced_result['confidence'] = min(1.0, base_result.get('confidence', 0.5) + 0.2)
@@ -130,7 +144,8 @@ class EnhancedQueryClassifier(QueryClassifier):
                 # Fallback to combining base response with context facts
                 enhanced_result['response'] = self._format_professional_email(
                     self._combine_response_with_facts(base_result.get('response', ''), context_result),
-                    context_result
+                    context_result,
+                    query
                 )
                 enhanced_result['enhanced'] = True
             
@@ -139,6 +154,57 @@ class EnhancedQueryClassifier(QueryClassifier):
         except Exception as e:
             print(f"Enhanced generation error: {e}")
             return base_result
+
+    def _generate_intelligent_response_from_context(self, query: str, rag_context: str, context_info: Dict) -> str:
+        """Generate intelligent response using Gemini LLM with RAG context"""
+        if not self.gemini_enabled:
+            return self._format_rag_context(rag_context)
+        
+        try:
+            # Create comprehensive prompt for intelligent response generation
+            prompt = f"""You are a professional AI assistant for an educational institution. You need to respond to a student query using the provided official documentation.
+
+STUDENT QUERY:
+{query}
+
+OFFICIAL DOCUMENTATION CONTEXT:
+{rag_context}
+
+INSTRUCTIONS:
+1. Analyze the student's query carefully
+2. Use only the information from the official documentation provided
+3. Structure your response professionally and concisely  
+4. Be specific and accurate - avoid generic statements
+5. If the documentation doesn't contain relevant information, acknowledge this politely
+6. Keep the response focused and under 300 words
+7. Use a helpful, professional tone appropriate for academic institution communication
+
+RESPONSE FORMAT RULES:
+- Start directly with the relevant information
+- DO NOT use asterisks (*), markdown formatting, or special characters
+- Use plain text formatting only - no bold, italics, or bullet symbols
+- For lists, use simple numbered format (1., 2., 3.) or dash format (- item)
+- Include specific details like dates, numbers, procedures when available
+- End with an offer for further assistance if needed
+- Make the response clean and readable in plain email format
+
+Generate a professional response using only plain text formatting:"""
+
+            # Get intelligent response from Gemini
+            response = self.gemini_model.generate_content(prompt)
+            
+            if response and response.text and len(response.text.strip()) > 50:
+                # Clean up any remaining asterisks or markdown formatting
+                clean_response = self._clean_email_formatting(response.text.strip())
+                return clean_response
+            else:
+                # Fallback to template-based formatting if Gemini fails
+                return self._format_rag_context(rag_context)
+                
+        except Exception as e:
+            logger.error(f"Error generating intelligent response with Gemini: {e}")
+            # Fallback to template-based formatting
+            return self._format_rag_context(rag_context)
     
     def _is_generic_response(self, response: str) -> bool:
         """Check if response is too generic"""
@@ -200,6 +266,40 @@ class EnhancedQueryClassifier(QueryClassifier):
         
         return facts[:4]  # Return maximum 4 facts
     
+    def _organize_content(self, content: str, sources: list = None) -> str:
+        """Organize content into professional sections"""
+        if not content or len(content.strip()) < 10:
+            return [content] if content else [""]
+        
+        lines = [line.strip() for line in content.split('\n') if line.strip()]
+        organized_lines = []
+        
+        current_section = []
+        for line in lines:
+            # Check if this is a section header (contains keywords like "Fee", "Payment", etc.)
+            if any(keyword in line.lower() for keyword in ['fee', 'payment', 'tuition', 'deadline', 'exam', 'admission']):
+                if current_section:
+                    organized_lines.extend(current_section)
+                    current_section = []
+                organized_lines.append(f"\n**{line.strip()}:**")
+            else:
+                if line.startswith('-') or line.startswith('•'):
+                    current_section.append(f"  {line}")
+                elif len(line) > 30:  # Longer lines as paragraphs
+                    current_section.append(f"\n{line}")
+                else:  # Short lines as bullet points
+                    current_section.append(f"  • {line}")
+        
+        # Add remaining content
+        if current_section:
+            organized_lines.extend(current_section)
+        
+        # Return as sections for consistent formatting
+        if organized_lines:
+            return ['\n'.join(organized_lines).strip()]
+        else:
+            return [content.strip()] if content else [""]
+    
     def _clean_response(self, response: str) -> str:
         """Clean up the generated response by removing unwanted tokens and text"""
         import re
@@ -229,11 +329,37 @@ class EnhancedQueryClassifier(QueryClassifier):
         
         return cleaned.strip()
     
-    def _format_professional_email(self, response: str, context_info: dict = None) -> str:
+    def _clean_email_formatting(self, text: str) -> str:
+        """Clean email formatting to remove asterisks and markdown formatting"""
+        if not text:
+            return text
+            
+        # Remove asterisks used for bold formatting
+        cleaned = re.sub(r'\*\*(.*?)\*\*', r'\1', text)  # **bold** -> bold
+        cleaned = re.sub(r'\*(.*?)\*', r'\1', cleaned)   # *italic* -> italic
+        
+        # Remove other markdown formatting
+        cleaned = re.sub(r'#{1,6}\s*(.*?)(?:\n|$)', r'\1\n', cleaned)  # Headers
+        cleaned = re.sub(r'`(.*?)`', r'\1', cleaned)  # Inline code
+        cleaned = re.sub(r'```.*?\n(.*?)\n```', r'\1', cleaned, flags=re.DOTALL)  # Code blocks
+        
+        # Clean up bullet points - replace with simple dash format
+        cleaned = re.sub(r'^\s*[\*\+\-•]\s+', '- ', cleaned, flags=re.MULTILINE)
+        
+        # Clean up excessive whitespace
+        cleaned = re.sub(r'\n\s*\n\s*\n', '\n\n', cleaned)  # Multiple newlines -> double newline
+        cleaned = re.sub(r'^\s+|\s+$', '', cleaned)  # Trim whitespace
+        
+        return cleaned
+
+    def _format_professional_email(self, response: str, context_info: dict = None, original_query: str = None) -> str:
         """Format the response into a professional email structure"""
         
         # Clean the response first
         response = self._clean_response(response)
+        
+        # Use original query if available, otherwise use response as query
+        query_for_llm = original_query if original_query else response
         
         # Professional email template
         email_parts = []
@@ -241,24 +367,101 @@ class EnhancedQueryClassifier(QueryClassifier):
         # Greeting
         email_parts.append("Dear Student,")
         email_parts.append("")
-        email_parts.append("Thank you for your inquiry regarding our institute programs and services.")
+        
+        # Context-aware greeting based on available information
+        if context_info and context_info.get('sources'):
+            # Analyze sources to provide specific greeting
+            sources_text = ' '.join(context_info.get('sources', []))
+            if 'fee' in sources_text.lower() or 'payment' in sources_text.lower():
+                email_parts.append("Thank you for your inquiry regarding fee information.")
+            elif 'exam' in sources_text.lower() or 'academic' in sources_text.lower():
+                email_parts.append("Thank you for your inquiry regarding academic information.")
+            elif 'computer science' in sources_text.lower() or 'course' in sources_text.lower():
+                email_parts.append("Thank you for your inquiry regarding our course programs.")
+            else:
+                email_parts.append("Thank you for your inquiry.")
+        else:
+            email_parts.append("Thank you for your inquiry.")
         email_parts.append("")
         
-        # Main content - structure the response
-        if context_info and context_info.get('sources'):
-            # Group content by source/topic
-            content_sections = self._organize_content(response, context_info.get('sources', []))
-            for section in content_sections:
-                email_parts.append(section)
+        # Main content - Use intelligent LLM generation with RAG context
+        # Check if we have RAG sources available (context_result uses different structure than rag_context)
+        has_sources = context_info and context_info.get('sources') and len(context_info.get('sources', [])) > 0
+        has_context = context_info and (context_info.get('context_used', True) or context_info.get('context', ''))
+        
+        if has_sources:
+            # Use RAG context as primary content - get actual content from context field
+            rag_context = context_info.get('context', '')
+            
+            if rag_context and len(rag_context.strip()) > 50:
+                # Generate intelligent response using Gemini LLM with RAG context
+                # This implements the proper pipeline: Query → RAG → LLM → Structured Response
+                intelligent_response = self._generate_intelligent_response_from_context(
+                    query_for_llm,  # Use the actual query for LLM processing
+                    rag_context, 
+                    context_info
+                )
+                
+                email_parts.append(intelligent_response)
+                email_parts.append("")
+            else:
+                # Fallback when context is empty but sources exist
+                email_parts.append("We have received your inquiry and will provide you with the relevant information.")
+                sources_list = context_info.get('sources', [])
+                if sources_list:
+                    email_parts.append(f"Relevant documents found: {', '.join(sources_list[:3])}")
                 email_parts.append("")
         else:
-            # Add response as structured content
-            if response.strip():
-                email_parts.append("**Information Requested:**")
+            # Add response as structured content when no RAG context available
+            if response.strip() and len(response.strip()) > 10:
+                # Try to generate intelligent response even without RAG context
+                if self.gemini_enabled:
+                    try:
+                        simple_prompt = f"""You are a professional AI assistant for an educational institution. 
+                        Respond professionally to this student query: {query_for_llm}
+                        
+                        IMPORTANT: Use only plain text formatting - no asterisks, markdown, or special characters.
+                        Keep the response concise, helpful, and professional. If you don't have specific information, 
+                        acknowledge this and suggest contacting the support team."""
+                        
+                        gemini_response = self.gemini_model.generate_content(simple_prompt)
+                        if gemini_response and gemini_response.text and len(gemini_response.text.strip()) > 30:
+                            # Clean any formatting from the response
+                            clean_response = self._clean_email_formatting(gemini_response.text.strip())
+                            email_parts.append(clean_response)
+                        else:
+                            # Fallback to basic formatting without asterisks
+                            email_parts.append("Information Requested:")
+                            email_parts.append("")
+                            formatted_content = self._format_content_sections(response)
+                            email_parts.append(formatted_content)
+                    except Exception as e:
+                        logger.error(f"Error generating fallback response: {e}")
+                        email_parts.append("Information Requested:")
+                        email_parts.append("")
+                        formatted_content = self._format_content_sections(response)
+                        email_parts.append(formatted_content)
+                else:
+                    # No Gemini available - use basic formatting without asterisks
+                    email_parts.append("Information Requested:")
+                    email_parts.append("")
+                    formatted_content = self._format_content_sections(response)
+                    email_parts.append(formatted_content)
+                email_parts.append("")
+            else:
+                # Fallback when no good response or context
+                email_parts.append("We have received your inquiry and will provide you with the relevant information.")
+                email_parts.append("")
+            if response.strip() and len(response.strip()) > 10:
+                email_parts.append("Information Requested:")
                 email_parts.append("")
                 # Format response with bullet points if it contains multiple pieces of info
                 formatted_content = self._format_content_sections(response)
                 email_parts.append(formatted_content)
+                email_parts.append("")
+            else:
+                # Fallback when no good response or context
+                email_parts.append("We have received your inquiry and will provide you with the relevant information.")
                 email_parts.append("")
         
         # Additional help offer
@@ -297,6 +500,183 @@ class EnhancedQueryClassifier(QueryClassifier):
             formatted_lines.append(line)
         
         return '\n'.join(formatted_lines)
+    
+    def _format_rag_context(self, rag_context: str) -> list:
+        """Format RAG context content into structured email sections"""
+        email_sections = []
+        
+        # The actual format is: "From filename: content continues on same line..."
+        # Split by "From " to get separate document sections
+        sections = rag_context.split('From ')
+        sections_processed = 0
+        max_sections = 2  # Limit to 2 sections to keep emails concise
+        
+        for section in sections[1:]:  # Skip first empty section
+            if sections_processed >= max_sections:
+                break
+                
+            if not section.strip() or len(section.strip()) < 50:
+                continue
+            
+            # Find the first colon to separate filename from content
+            colon_idx = section.find(':')
+            if colon_idx == -1:
+                continue
+                
+            filename = section[:colon_idx].strip()
+            content = section[colon_idx+1:].strip()
+            
+            if not content or len(content) < 30:
+                continue
+            
+            # Add section header based on document type - make it more specific
+            if 'fee' in filename.lower():
+                email_sections.append("Fee Information:")
+            elif 'course' in filename.lower() or 'study' in filename.lower():
+                email_sections.append("Course Information:")
+            elif 'academic' in filename.lower() or 'calendar' in filename.lower():
+                email_sections.append("Academic Calendar:")
+            elif 'handbook' in filename.lower():
+                email_sections.append("Student Guidelines:")
+            elif 'brochure' in filename.lower():
+                email_sections.append("Institute Information:")
+            else:
+                email_sections.append(f"{filename.replace('.pdf', '')} Information:")
+            
+            # Format content into readable chunks
+            formatted_content = self._format_document_content(content)
+            email_sections.append(formatted_content)
+            email_sections.append("")  # Add spacing
+            sections_processed += 1
+        
+        # Add helpful footer if we have content
+        if email_sections:
+            email_sections.append("---")
+            email_sections.append("Need more specific information?** Please reply with your specific questions!")
+        
+        return email_sections
+    
+    def _format_document_content(self, content: str, query_keywords: list = None) -> str:
+        """Format document content for email display - provide complete relevant information"""
+        if not content:
+            return "Information is available - please contact our support team for specific details."
+        
+        # Clean and structure the content
+        lines = [line.strip() for line in content.split('\n') if line.strip()]
+        
+        # If we have query keywords, try to find relevant lines first
+        relevant_lines = []
+        other_lines = []
+        
+        if query_keywords:
+            for line in lines:
+                line_lower = line.lower()
+                if any(keyword.lower() in line_lower for keyword in query_keywords):
+                    relevant_lines.append(line)
+                else:
+                    other_lines.append(line)
+        else:
+            relevant_lines = lines
+        
+        formatted_lines = []
+        
+        # Add relevant lines first (complete, no truncation)
+        for line in relevant_lines[:5]:  # Max 5 relevant lines
+            if line and len(line) > 10:
+                # Clean up the line but don't truncate
+                clean_line = line.replace(' - ', ' — ').strip()
+                if not clean_line.startswith(('•', '-', '*')):
+                    formatted_lines.append(f"• {clean_line}")
+                else:
+                    formatted_lines.append(clean_line)
+        
+        # Add other important lines if we have space
+        if len(formatted_lines) < 3:
+            for line in other_lines[:2]:
+                if line and len(line) > 10:
+                    clean_line = line.replace(' - ', ' — ').strip()
+                    if not clean_line.startswith(('•', '-', '*')):
+                        formatted_lines.append(f"• {clean_line}")
+                    else:
+                        formatted_lines.append(clean_line)
+        
+        if formatted_lines:
+            return '\n'.join(formatted_lines)
+        else:
+            return "Detailed information is available in our official documentation."
+    
+    def _extract_fee_info(self, content: str) -> str:
+        """Extract and format fee information"""
+        lines = content.split('\n')
+        fee_info = []
+        
+        for line in lines:
+            line = line.strip()
+            if any(keyword in line.lower() for keyword in ['fee', 'cost', 'payment', 'tuition', '$', 'rs.', 'rupee']):
+                if line and not line.startswith('From '):
+                    # Clean up formatting
+                    line = line.replace(' - ', '\n• ')
+                    if not line.startswith('•'):
+                        line = f"• {line}"
+                    fee_info.append(line)
+        
+        if fee_info:
+            return '\n'.join(fee_info[:8])  # Limit to prevent overwhelming
+        return "Fee information is available through the student portal or accounts office."
+    
+    def _extract_academic_info(self, content: str) -> str:
+        """Extract and format academic calendar information"""
+        lines = content.split('\n')
+        academic_info = []
+        
+        for line in lines:
+            line = line.strip()
+            if any(keyword in line.lower() for keyword in ['semester', 'exam', 'classes', 'results', 'calendar']):
+                if line and not line.startswith('From '):
+                    # Clean up formatting
+                    line = line.replace(' - ', '\n• ')
+                    if not line.startswith('•'):
+                        line = f"• {line}"
+                    academic_info.append(line)
+        
+        if academic_info:
+            return '\n'.join(academic_info[:8])  # Limit to prevent overwhelming
+        return "Academic calendar information is available on the student portal."
+    
+    def _extract_course_info(self, content: str) -> str:
+        """Extract and format course information"""
+        lines = content.split('\n')
+        course_info = []
+        
+        for line in lines:
+            line = line.strip()
+            if any(keyword in line.lower() for keyword in ['course', 'program', 'computer', 'science', 'curriculum']):
+                if line and not line.startswith('From '):
+                    # Clean up formatting
+                    if not line.startswith('•'):
+                        line = f"• {line}"
+                    course_info.append(line)
+        
+        if course_info:
+            return '\n'.join(course_info[:6])  # Limit to prevent overwhelming
+        return "Course information is available through the academic department or student portal."
+    
+    def _clean_source_content(self, content: str) -> str:
+        """Clean and format source content for email display"""
+        # Remove file references and clean up
+        content = re.sub(r'From [^:]+:\s*', '', content)
+        
+        # Split into manageable chunks
+        lines = [line.strip() for line in content.split('\n') if line.strip()]
+        
+        # Format as bullet points
+        formatted_lines = []
+        for line in lines[:6]:  # Limit lines
+            if line and len(line) > 10:
+                if not line.startswith('•'):
+                    formatted_lines.append(f"• {line}")
+                else:
+                    formatted_lines.append(line)
     
     def _structure_with_llm(self, raw_content: str) -> str:
         """Use LLM to structure raw content into professional format"""
@@ -395,19 +775,19 @@ class EnhancedQueryClassifier(QueryClassifier):
         
         # Add organized information
         if fee_info:
-            structured_parts.append("**Fee Information:**")
+            structured_parts.append("Fee Information:")
             for info in fee_info[:3]:  # Limit to prevent overwhelming
                 structured_parts.append(f"• {info}")
             structured_parts.append("")
         
         if date_info:
-            structured_parts.append("**Important Dates:**")
+            structured_parts.append("Important Dates:")
             for info in date_info[:3]:
                 structured_parts.append(f"• {info}")
             structured_parts.append("")
         
         if general_info:
-            structured_parts.append("**Additional Information:**")
+            structured_parts.append("Additional Information:")
             for info in general_info[:3]:
                 structured_parts.append(f"• {info}")
             structured_parts.append("")

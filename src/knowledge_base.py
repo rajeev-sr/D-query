@@ -13,8 +13,8 @@ class DocumentProcessor:
         self.docs_dir = Path(docs_directory)
         self.docs_dir.mkdir(parents=True, exist_ok=True)
         
-        # Create sample documents if none exist
-        self._create_sample_documents()
+        # Only use actual PDF files provided by user
+        # self._create_sample_documents()  # Disabled - using only user's PDF files
     
     def _create_sample_documents(self):
         """Create sample institute documents for testing"""

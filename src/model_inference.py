@@ -219,7 +219,7 @@ class QueryClassifier:
                 print(f"Model generated: '{generated_part[:100]}...'")
             
             # Parse result
-            result = self._parse_model_output(generated_part)
+            result = self._parse_model_output(generated_part, query)
             result['confidence'] = self._calculate_confidence(generated_part)
             
             return result
@@ -234,7 +234,7 @@ class QueryClassifier:
                 "fallback": True
             }
     
-    def _parse_model_output(self, output):
+    def _parse_model_output(self, output, query=""):
         """Parse model output to extract category and response"""
         # Default values
         result = {
@@ -256,7 +256,8 @@ class QueryClassifier:
             # If no structured format, use entire output as response and classify by content
             raw_response = output.strip()
             result["response"] = self._clean_and_format_response(raw_response)
-            result["category"] = self._classify_by_content(raw_response)
+            # Pass both query and response for better classification
+            result["category"] = self._classify_by_content(raw_response, query)
         
         # Determine action based on category and content
         result["action"] = self._determine_action(result["category"], result["response"])
@@ -310,28 +311,29 @@ class QueryClassifier:
         
         return True
     
-    def _classify_by_content(self, response):
-        """Classify response based on content keywords"""
-        response_lower = response.lower()
+    def _classify_by_content(self, response, query=""):
+        """Classify response based on content keywords from both query and response"""
+        # Combine query and response for classification
+        combined_text = f"{query} {response}".lower()
         
         # Academic and exam related
-        if any(word in response_lower for word in ['exam', 'test', 'grade', 'result', 'academic', 'calendar', 'schedule']):
+        if any(word in combined_text for word in ['exam', 'test', 'grade', 'result', 'academic', 'calendar', 'schedule']):
             return 'academic'
         
         # Fee and payment related
-        if any(word in response_lower for word in ['fee', 'payment', 'pay', 'cost', 'charge', 'account']):
+        if any(word in combined_text for word in ['fee', 'payment', 'pay', 'cost', 'charge', 'account', 'tuition', 'bill']):
             return 'fee'
         
         # Registration and enrollment
-        if any(word in response_lower for word in ['register', 'enrollment', 'admission', 'apply']):
+        if any(word in combined_text for word in ['register', 'enrollment', 'admission', 'apply', 'enroll']):
             return 'registration'
         
         # Technical support
-        if any(word in response_lower for word in ['password', 'login', 'technical', 'support', 'help']):
+        if any(word in combined_text for word in ['password', 'login', 'technical', 'support', 'help', 'system', 'portal']):
             return 'technical'
         
         # Administrative
-        if any(word in response_lower for word in ['office', 'document', 'certificate', 'verification']):
+        if any(word in combined_text for word in ['office', 'document', 'certificate', 'verification', 'transcript']):
             return 'administrative'
         
         return 'other'

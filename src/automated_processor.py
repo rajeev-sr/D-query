@@ -59,8 +59,8 @@ class AutomatedEmailProcessor:
             "human_review_required_categories": ["complex", "complaint"],
             "escalation_keywords": ["urgent", "complaint", "angry", "frustrated"],
             "confidence_thresholds": {
-                "auto_respond": 0.8,
-                "review_needed": 0.5
+                "auto_respond": 0.60,  # Aligned with EnhancedDecisionEngine
+                "review_needed": 0.30  # Aligned with EnhancedDecisionEngine
             },
             "email_query": "is:unread",
             "working_hours": {
