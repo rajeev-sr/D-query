@@ -121,5 +121,237 @@
     },
     "added_at": "2025-09-15T00:58:19.193764",
     "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-15T23:24:30.453178"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-15T23:24:31.158039",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-15T23:25:17.812911"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-15T23:25:17.994473",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-15T23:25:44.422385"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-15T23:25:44.629104",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-15T23:26:39.033689"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-15T23:26:39.231858",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-15T23:27:20.994207"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "academic_calendar.txt",
+        "fee_structure.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-15T23:27:21.125689",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-16T00:13:44.981109"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "fee_structure.txt",
+        "academic_calendar.txt",
+        "assignment_guidelines.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-16T00:13:45.367702",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-16T00:16:46.158353"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "fee_structure.txt",
+        "assignment_guidelines.txt",
+        "academic_calendar.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-16T00:16:46.838954",
+    "status": "pending_review"
+  },
+  {
+    "email": {
+      "id": "1994224a4eabff52",
+      "subject": "Regarding testing",
+      "sender": "RAJEEV KUMAR <rajeevk@iitbhilai.ac.in>",
+      "date": "Sat, 13 Sep 2025 13:45:09 +0530",
+      "body": "Hello I am Rajeev from B.tech\r\nI want to know the fee structure of this semester.\r\n12341700\r\n",
+      "thread_id": "1994224a4eabff52",
+      "gemini_filtered": true,
+      "gemini_filter_result": "query",
+      "gemini_filter_reason": "Classified as query by Gemini",
+      "gemini_filtered_at": "2025-09-16T00:16:59.647653"
+    },
+    "decision": {
+      "action": "review_needed",
+      "reason": "Medium confidence requiring review (AI: 0.50, RAG: 0.48)",
+      "confidence": 0.5,
+      "category": "academic",
+      "response": "This is a test.",
+      "rag_sources": [
+        "fee_structure.txt",
+        "assignment_guidelines.txt",
+        "academic_calendar.txt"
+      ],
+      "enhanced": false
+    },
+    "added_at": "2025-09-16T00:16:59.807189",
+    "status": "pending_review"
   }
 ]

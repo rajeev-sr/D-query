@@ -3,26 +3,23 @@
   "max_emails_per_batch": 10,
   "auto_respond_enabled": true,
   "confidence_thresholds": {
-    "auto_respond": 0.65,
-    "review_needed": 0.4,
+    "auto_respond": 0.60,
+    "review_needed": 0.30,
     "escalate": 0.0
   },
   "human_review_required_categories": [
-    "complex",
-    "complaint",
-    "technical"
+    "complaint"
   ],
   "escalation_keywords": [
     "urgent",
-    "emergency",
+    "emergency", 
     "complaint",
     "angry",
     "frustrated",
     "disappointed",
-    "wrong",
-    "mistake",
-    "problem",
-    "issue"
+    "very wrong",
+    "major mistake",
+    "serious problem"
   ],
   "email_query": "is:unread",
   "working_hours": {

@@ -193,7 +193,7 @@ class AIQueryHandlerDashboard:
                 </div>
                 """, unsafe_allow_html=True)
                 
-                if st.button("▶ Initialize System", type="primary", width="stretch"):
+                if st.button("▶ Initialize System", type="primary", use_container_width=True):
                     if self.initialize_components():
                         st.rerun()
                     else:
@@ -278,7 +278,7 @@ class AIQueryHandlerDashboard:
                 </div>
                 """, unsafe_allow_html=True)
                 
-                if st.button("▶ Start Automation", type="primary", width="stretch"):
+                if st.button("▶ Start Automation", type="primary", use_container_width=True):
                     st.session_state.automation_running = True
                     st.success("Automation started")
                     st.rerun()
@@ -1371,7 +1371,7 @@ def main():
         
         col1, col2, col3 = st.columns([1, 1, 1])
         with col2:
-            if st.button("◆ Retry System Load", type="primary", width="stretch"):
+            if st.button("◆ Retry System Load", type="primary", use_container_width=True):
                 st.rerun()
         
         st.stop()
