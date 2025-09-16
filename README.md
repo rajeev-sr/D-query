@@ -8,11 +8,11 @@
 
 ## Details
 
-Name : Rajeev Kumar
-Department : Computer Science and Engineering
-University : Indian Institute of Technology Bhilai
-Institute email : rajeevk@iitbhilai.ac.in
-Personal email : rajeevkumar16034@gmail.com
+- Name : Rajeev Kumar
+- Department : Computer Science and Engineering
+- University : Indian Institute of Technology Bhilai
+- Institute email : rajeevk@iitbhilai.ac.in
+- Personal email : rajeevkumar16034@gmail.com
 
 ## 🌟 Overview
 
