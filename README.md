@@ -6,7 +6,13 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
-**D-Query**
+## Details
+
+Name : Rajeev Kumar
+Department : Computer Science and Engineering
+University : Indian Institute of Technology Bhilai
+Institute email : rajeevk@iitbhilai.ac.in
+Personal email : rajeevkumar16034@gmail.com
 
 ## 🌟 Overview
 
