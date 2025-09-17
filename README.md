@@ -14,6 +14,7 @@
 - Institute email : rajeevk@iitbhilai.ac.in
 - Personal email : rajeevkumar16034@gmail.com
 - Interaction Logs : https://d-query.notion.site/Interaction-Logs-27142a9741c3803aa370ec9addde05d2
+- Demo Video : https://github.com/rajeev-sr/D-query/blob/main/D-Query.mp4
 
 ## 🌟 Overview
 
